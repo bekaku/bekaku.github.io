@@ -1,0 +1,1 @@
+import{d as e,a1 as a,o as t,a as s,w as o,bG as n,I as r}from"./index.0ba8118b.js";import{u as m}from"./useLang.6b94b428.js";import{u}from"./use-meta.5ad233ca.js";const c=r("p",null,"Theme Page",-1),g=e({__name:"ThemePage",setup(_){return u({title:"I18n Page"}),m(),a(),(i,p)=>(t(),s(n,{class:"row items-center justify-evenly"},{default:o(()=>[c]),_:1}))}});export{g as default};
