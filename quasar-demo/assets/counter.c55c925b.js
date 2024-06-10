@@ -1,1 +1,0 @@
-import{bN as t}from"./index.1d4abc77.js";const n=t("counter",{state:()=>({counter:0}),getters:{doubleCount:e=>e.counter*2},actions:{increment(){this.counter++},decrement(){this.counter--},reset(){this.counter=0},increment2x(){this.counter*=2}}});export{n as u};
