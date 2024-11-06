@@ -1,0 +1,1 @@
+import{r as s,D as n}from"./index-BzL-CGt2.js";const r=e=>{const t={current:1,itemsPerPage:e||n,totalPages:0,totalElements:0,last:!1,perPageList:[{text:"5",value:5},{text:"10",value:10},{text:"15",value:15},{text:"20",value:20},{text:"50",value:50}]},a=s(Object.assign({},t));return{pages:a,resetPaging:()=>{a.value=Object.assign({},t)}}};export{r as u};
