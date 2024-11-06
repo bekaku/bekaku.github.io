@@ -1,0 +1,1 @@
+import{Z as t}from"./index-CDY51G8j.js";import{$ as a}from"./index-CDY51G8j.js";import{b as e}from"./index-DDZXG7TO.js";const f=e(({app:o})=>{o.component("pdf-vue",t)});export{f as default,a as usePDF};
