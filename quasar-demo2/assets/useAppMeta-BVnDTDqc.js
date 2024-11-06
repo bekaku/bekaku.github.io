@@ -1,1 +1,0 @@
-import{a as u,v as i,r as l}from"./index-Cd3HZUlj.js";import{u as o}from"./use-meta-XTSl7AT_.js";const c=e=>{const{t}=u(),a=i(),s=l(a.meta.pageName?t(`${a.meta.pageName}`)+`${e&&e.additionalTitle?" - "+e.additionalTitle:""}`:t("app.name"));return o(()=>({title:s.value})),{setTitle:r=>{s.value=r}}};export{c as u};
