@@ -1,0 +1,1 @@
+import{b0 as a,c as r,o as n,w as e,e as o,b2 as c,b3 as s}from"./index-BGI1DWlv.js";import{_}from"./_plugin-vue_export-helper-DlAUqK2U.js";const f={};function u(i,l){const t=a("router-view");return n(),r(s,{view:"hHh LpR fFf"},{default:e(()=>[o(c,null,{default:e(()=>[o(t)]),_:1})]),_:1})}const d=_(f,[["render",u]]);export{d as default};
