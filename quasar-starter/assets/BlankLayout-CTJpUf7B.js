@@ -1,1 +1,0 @@
-import{aW as t,c as r,o as n,w as e,e as o,aY as c,aZ as s}from"./index-DUGrkwAr.js";import{_}from"./_plugin-vue_export-helper-DlAUqK2U.js";const f={};function u(i,l){const a=t("router-view");return n(),r(s,{view:"hHh LpR fFf"},{default:e(()=>[o(c,null,{default:e(()=>[o(a)]),_:1})]),_:1})}const d=_(f,[["render",u]]);export{d as default};
