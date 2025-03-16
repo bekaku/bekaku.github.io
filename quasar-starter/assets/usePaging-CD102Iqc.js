@@ -1,0 +1,1 @@
+import{k as s,D as g}from"./index-kOwwKpmx.js";const r=a=>{const e={current:1,itemsPerPage:a||g,totalPages:0,totalElements:0,last:!1,perPageList:[{text:"5",value:5},{text:"10",value:10},{text:"15",value:15},{text:"20",value:20},{text:"50",value:50}]},t=s(Object.assign({},e));return{pages:t,resetPaging:()=>{t.value=Object.assign({},e)}}};export{r as u};
