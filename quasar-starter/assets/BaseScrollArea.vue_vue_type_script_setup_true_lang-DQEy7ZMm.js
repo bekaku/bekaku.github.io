@@ -1,0 +1,1 @@
+import{l as t,m as a,n as s,aU as l,ap as o,w as r,v as n}from"./index-BGAGrt6k.js";const h=t({__name:"BaseScrollArea",props:{height:{default:"420px"}},setup(c){return(e,i)=>(s(),a(l,{style:o({height:e.height}),"content-active-style":"width: 100%;","content-style":"width: 100%;"},{default:r(()=>[n(e.$slots,"default")]),_:3},8,["style"]))}});export{h as _};
