@@ -1,1 +1,0 @@
-import{d as t,c as a,o as s,aF as o,a7 as r,w as l,r as n}from"./index-kOwwKpmx.js";const p=t({__name:"BaseScrollArea",props:{height:{default:"420px"}},setup(c){return(e,i)=>(s(),a(o,{style:r({height:e.height}),"content-active-style":"width: 100%;","content-style":"width: 100%;"},{default:l(()=>[n(e.$slots,"default")]),_:3},8,["style"]))}});export{p as _};
