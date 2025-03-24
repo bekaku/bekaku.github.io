@@ -1,1 +1,0 @@
-import{l as s,$ as t,n as a,t as r,x as n,aM as o,as as c}from"./index-NsS699ic.js";const i={class:"col-12 text-center"},_=s({__name:"BaseSpinner",props:{height:{default:"150px"}},setup(l){return(e,p)=>(a(),t("div",{class:"row items-center",style:c({minHeight:e.height})},[r("div",i,[n(o,{color:"primary",size:"2em",class:"self-center"})])],4))}});export{_};
