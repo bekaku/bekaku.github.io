@@ -1,1 +1,0 @@
-import{u as r,a8 as i,r as l}from"./index-BUKV_9O1.js";import{u as o}from"./use-meta-BfsM_rxZ.js";const c=e=>{const{t}=r(),a=i(),s=l(a.meta.pageName?t(`${a.meta.pageName}`)+`${e&&e.additionalTitle?" - "+e.additionalTitle:""}`:t("app.name"));return o(()=>({title:s.value})),{setTitle:u=>{s.value=u}}};export{c as u};
