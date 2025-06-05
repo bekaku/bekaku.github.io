@@ -94,5 +94,7 @@ Feel free to check out my repositories, reach out for collaboration, or just say
 
 > _“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler_
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=bekaku.repoName)
+
  <img src="https://github-readme-stats.vercel.app/api?username=bekaku&show_icons=true&theme=prussian" alt="Bekaku" width="45%" align="right"/>
  <img  src="https://github-readme-streak-stats.herokuapp.com/?user=bekaku&theme=prussian" width="48%" >
