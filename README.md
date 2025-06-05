@@ -1,50 +1,98 @@
-[![Chanavee has a lot of ideas.](https://i.ibb.co/vwcwknr/126906845-3847263042004453-4231016022382760270-n.jpg)](https://www.linkedin.com/in/bekaku/)
-# Hi there. I am Chanavee 👋 . Welcome to my Github Profile!!!   ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=bekaku.repoName)
+[![Chanavee has a lot of ideas.](https://bekaku.github.io/cover.jpg)](https://www.linkedin.com/in/bekaku/)
+# 👋 Hello there, I'm Chanavee Bekaku!
 
-- 🔭 I am currently working as a Software development manager at [Grand Ats Co.,Ltd.](http://grandats.com/)
-- 📫 How to reach me: <a href="mailto:baekaku@gmail.com">![Email Me!!](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a> <a href="https://www.linkedin.com/in/bekaku/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a> [Github Page](https://bekaku.github.io/)
+🎯 **Software Development Manager** at [**Grand Ats Co., Ltd.**](#), Thailand  
+🧑‍💻 Full Stack Developer with **15+ years** of experience building scalable web, mobile, and cloud applications  
+🌏 Passionate about clean code, developer mentorship, and solving real-world problems with tech
 
-## Tech Stack
-<p>
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" />
-  <img alt="Typscript" src="https://img.shields.io/badge/Typscript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=white" /> 
-  <img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white" /> 
-  <img alt="Vuejs" src="https://img.shields.io/badge/-Vue-42b883?style=flat-square&logo=Vue.js&logoColor=white" />
-  <img alt="Nuxt.js" src="https://img.shields.io/badge/-Nuxt.js-00C58E?style=flat-square&logo=Nuxt.js&logoColor=white" />
-  <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=buymeacoffee&logoColor=white" />
-  <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white" />
-  <img alt="Spring Boot" src="https://img.shields.io/badge/-SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white" />
-  <img alt="CSS" src="https://img.shields.io/badge/CSS%20-%231572B6.svg?style=flat-square&logo=css3&logoColor=white" />
-  <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-  <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
-  <img alt="Vuetify" src="https://img.shields.io/badge/-Vuetify-1867C0?style=flat-square&logo=Vuetify&logoColor=white" />
-  <img alt="Quasar" src="https://img.shields.io/badge/-Quasar-1976D2?style=flat-square&logo=Quasar&logoColor=white" />
-  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-%23000000.svg?style=flat-square&logo=markdown&logoColor=white" />
-  <img alt="Capacitor" src="https://img.shields.io/badge/-Capacitor-119EFF?style=flat-square&logo=Capacitor&logoColor=white" />
-  <img alt="Cordova" src="https://img.shields.io/badge/-Cordova-E8E8E8?style=flat-square&logo=apache-cordova&logoColor=black" />
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img alt="CSS" src="https://img.shields.io/badge/CSS%20-%231572B6.svg?style=flat-square&logo=css3&logoColor=white" />
-  <img alt="PHP" src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=PHP&logoColor=white" />
-  <img alt="Laravel" src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=Laravel&logoColor=white" />
-  <img alt="Android" src="https://img.shields.io/badge/-Android-3DDC84?style=flat-square&logo=Android&logoColor=white" />
-  <img alt="Ionic" src="https://img.shields.io/badge/-Ionic-3880FF?style=flat-square&logo=Ionic&logoColor=white" />
-  <img alt="Linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=Linux&logoColor=black" />
-  <img alt="Ubuntu" src="https://img.shields.io/badge/-Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=white" />
-</p>
+---
 
-<!--
-## Top Languages
-  
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bekaku&layout=compact)
--->
+## 🧠 About Me
 
-## My GitHub Stats
+From building backend microservices to crafting polished frontend experiences, I've worn many hats in the software world.  
+I currently lead engineering teams, architect systems, and drive tech-forward innovation at Grand Ats Co., Ltd. — helping businesses grow through code.
+
+I believe in open-source, automation, and staying curious in a fast-moving world.
+
+---
+
+## 🛠️ Tech Stack
+
+### 💡 Languages & Core Tech
+- **JavaScript** / **TypeScript**
+- **Java**
+- **PHP**
+- **HTML5**, **CSS**, **Sass**
+- **Markdown**
+
+### ⚙️ Backend
+- **Spring Boot**
+- **Laravel**
+- **Node.js**
+- **JWT (JSON Web Tokens)**
+
+### 🌐 Frontend Frameworks
+- **Vue.js**, **Nuxt.js**, **Vuetify**, **Quasar**
+- **Vite**
+
+### 📱 Mobile Development
+- **Capacitor**
+- **Cordova**
+- **Ionic**
+- **Android**
+
+### 🧱 Databases & Caching
+- **MySQL**
+- **PostgreSQL**
+- **Redis**
+
+### 📬 Messaging & Streaming
+- **RabbitMQ**
+- **Apache Kafka**
+
+### 🐳 DevOps & Infrastructure
+- **Docker**
+- **Linux**, **Ubuntu**
+- **Git**, **NPM**, **PNPM**
+
+### 📊 **Monitoring & Observability**
+- **Grafana**
+- **Prometheus**
+---
+## :pushpin: Backend Project
+| Project Name  | Tech |
+|------|--------------|
+| [Spring boot Rest api Starter Template](https://github.com/bekaku/java-spring-boot-starter) | <img alt="springboot" src="https://img.shields.io/badge/-Springboot-6DB33F?style=flat-square&logo=springboot&logoColor=white" /> <img alt="Mysql" src="https://img.shields.io/badge/-Mysql-4479A1?style=flat-square&logo=mysql&logoColor=white" /> |
+
+## :pushpin: Frontend Project
+| Project Name  | Tech |
+|------|--------------|
+| [Vue JS 3 + Typescript + Quasar 2 Starter template + Docker](https://bekaku.github.io/quasar-starter) | <img alt="Vuejs" src="https://img.shields.io/badge/-Vue-42b883?style=flat-square&logo=Vue.js&logoColor=white" /> <img alt="Quasar" src="https://img.shields.io/badge/-Quasar-1976D2?style=flat-square&logo=Quasar&logoColor=white" /> <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" /> |
+| [Nuxt 3 + Typescript + Quasar 2 + Docker](https://github.com/bekaku/nuxt-quasar-example-app) | <img alt="Nuxt.js" src="https://img.shields.io/badge/-Nuxt-00DC82?style=flat-square&logo=Nuxt&logoColor=white" /> <img alt="Quasar" src="https://img.shields.io/badge/-Quasar-1976D2?style=flat-square&logo=Quasar&logoColor=white" /> <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" /> |
+
+## :pushpin: Mobile Project
+| Project Name  | Tech |
+|------|--------------|
+| [Vue JS 3 + Typescript + Ionic 8](https://github.com/bekaku/vue-ionic-example-app) | <img alt="Vuejs" src="https://img.shields.io/badge/-Vue-42b883?style=flat-square&logo=Vue.js&logoColor=white" /> <img alt="ionic" src="https://img.shields.io/badge/-Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white" /> |
+
+
+## 🌱 What I'm Into Now
+
+- Leading and mentoring dev teams with a focus on growth and agility 
+- Architecting scalable, event-driven systems
+- Exploring the future of frontend and backend performance
+- Building hybrid mobile apps that feel native  
+
+---
+
+## 📫 Let's Connect!
+
+Feel free to check out my repositories, reach out for collaboration, or just say hi!  
+🔗 [LinkedIn](https://www.linkedin.com/in/bekaku/) • [Email](mailto:baekaku@gmail.com)
+
+---
+
+> _“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler_
 
  <img src="https://github-readme-stats.vercel.app/api?username=bekaku&show_icons=true&theme=prussian" alt="Bekaku" width="45%" align="right"/>
  <img  src="https://github-readme-streak-stats.herokuapp.com/?user=bekaku&theme=prussian" width="48%" >
- 
-
