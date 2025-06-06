@@ -3,741 +3,633 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chanavee Bekaku - Software Development Manager</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary: #64748b;
-            --accent: #10b981;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --bg-card: #ffffff;
-            --text-primary: #1e293b;
-            --text-secondary: #475569;
-            --border: #e2e8f0;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-          
-			background-color: #f1f1f1;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .header {
-            background: var(--bg-card);
-            border-radius: 24px;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-        }
-
-        .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-            flex-shrink: 0;
-        }
-
-        .profile-info h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .role {
-            font-size: 1.25rem;
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .company {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .stat-card {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 16px;
-            text-align: center;
-            border: 1px solid var(--border);
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        .section {
-            background: var(--bg-card);
-            border-radius: 20px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow);
-        }
-
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .section-icon {
-            width: 2rem;
-            height: 2rem;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1rem;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .tech-category {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-
-        .tech-category h4 {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tech-tag {
-            background: var(--bg-card);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid var(--border);
-            transition: all 0.2s ease;
-        }
-
-        .tech-tag:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-1px);
-        }
-
-        .projects-table {
-            overflow-x: auto;
-        }
-
-        .project-card {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: between;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-description {
-            flex: 1;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .tech-badge {
-            background: var(--primary);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .project-link {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: background 0.2s ease;
-        }
-
-        .project-link:hover {
-            background: #059669;
-        }
-
-        .about-text {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .highlight-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .highlight-item {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border-left: 4px solid var(--primary);
-        }
-
-        .connect-links {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .connect-link {
-            background: var(--primary);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .connect-link:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
-        }
-
-        .quote {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            padding: 2rem;
-            border-radius: 16px;
-            text-align: center;
-            font-style: italic;
-            font-size: 1.1rem;
-            margin: 2rem 0;
-        }
-
-        .stats-section {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .github-stats {
-            flex: 1;
-            text-align: center;
-        }
-
-        .github-stats img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-        }
-
-        .visitor-badge {
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            .header {
-                padding: 2rem;
-            }
-
-            .profile-section {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .profile-info h1 {
-                font-size: 2rem;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .section {
-                padding: 1.5rem;
-            }
-
-            .tech-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-section {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <title>Chanavee Bekaku | Software Development Manager</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Chanavee Bekaku - Software Development Manager with 15+ years of experience building scalable web, mobile, and cloud applications">
+    <meta name="keywords" content="Software Development, Full Stack Developer, Java, JavaScript, TypeScript, PHP, Spring Boot, Vue.js">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="portfolio/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="portfolio/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-section">
-                <div class="profile-image">👋</div>
-                <div class="profile-info">
-                    <h1>Hello there, I'm Chanavee Bekaku!</h1>
-                    <div class="role">Software Development Manager</div>
-                    <div class="company">at Grand Ats Co., Ltd., Thailand</div>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">CB</a>
                 </div>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Years Experience</div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">Full Stack</div>
-                    <div class="stat-label">Developer</div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">Team</div>
-                    <div class="stat-label">Leader</div>
-                </div>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">🧠</span>
-                About Me
-            </h2>
-            <p class="about-text">
-                From building backend microservices to crafting polished frontend experiences, I've worn many hats in the software world. 
-                I currently lead engineering teams, architect systems, and drive tech-forward innovation for organizations — helping businesses grow through code.
-            </p>
-            <p class="about-text">
-                I believe in open-source, automation, and staying curious in a fast-moving world.
-            </p>
-        </section>
-
-        <!-- Tech Stack Section -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">🛠️</span>
-                Tech Stack
-            </h2>
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h4>💡 Languages & Core Tech</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">Sass</span>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h4>⚙️ Backend</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Gradle</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h4>🌐 Frontend</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Nuxt.js</span>
-                        <span class="tech-tag">Vuetify</span>
-                        <span class="tech-tag">Quasar</span>
-                        <span class="tech-tag">Vite</span>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h4>📱 Mobile</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Capacitor</span>
-                        <span class="tech-tag">Cordova</span>
-                        <span class="tech-tag">Ionic</span>
-                        <span class="tech-tag">Android</span>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h4>🧱 Databases</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Redis</span>
-                    </div>
-                </div>
-                
-                <div class="tech-category">
-                    <h4>🐳 DevOps</h4>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Grafana</span>
-                        <span class="tech-tag">Prometheus</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Backend Projects -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">📌</span>
-                Backend Projects
-            </h2>
-            
-            <div class="project-card">
-                <div class="project-description">
-                    A modern and modular starter template for building robust REST APIs using Spring Boot. Designed for quick bootstrapping of secure, production-ready Java backends.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Java</span>
-                    <span class="tech-badge">Spring Boot</span>
-                    <span class="tech-badge">Gradle</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="tech-badge">Docker</span>
-                </div>
-                <a href="https://github.com/bekaku/java-spring-boot-starter" target="_blank" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-description">
-                    MySQL8 Master-Slave replication environment using Docker Compose.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">MySQL</span>
-                    <span class="tech-badge">Docker</span>
-                </div>
-                <a href="https://github.com/bekaku/mysql-replecation-docker" target="_blank" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-description">
-                    Starter Node.js, Express, Sequelize, MySQL template for rapid development.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">Express</span>
-                    <span class="tech-badge">MySQL</span>
-                </div>
-                <a href="https://github.com/bekaku/nodejs-express-mysql" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    PHP websocket with thruway and autobahn-js
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <a href="https://github.com/bekaku/php-thruway-web-socket-example" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Simple PHP REST APIs
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP</span>
-                    <span class="tech-badge">MySql</span>
-                </div>
-                <a href="https://github.com/bekaku/php-rest-api" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Forum Example PHP REST APIs
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP</span>
-                    <span class="tech-badge">MySql</span>
-                </div>
-                <a href="https://github.com/bekaku/example-forum-rest-api-php" target="_blank" class="project-link">View Project</a>
-            </div>
-        </section>
-
-        <!-- Frontend Projects -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">📌</span>
-                Frontend Projects
-            </h2>
-            
-            <div class="project-card">
-                <div class="project-description">
-                    Vue JS 3 + TypeScript + Quasar 2 Starter template + Docker for modern web development.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Quasar</span>
-                    <span class="tech-badge">Docker</span>
-                </div>
-                <a href="https://bekaku.github.io/quasar-starter" target="_blank" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-description">
-                    Nuxt 3 + TypeScript + Quasar 2 + Docker for server-side rendered applications.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">Nuxt.js</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Quasar</span>
-                </div>
-                <a href="https://github.com/bekaku/nuxt-quasar-example-app" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Starter template for Vite + Vue js3 + TypeScript project
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Vite</span>
-                </div>
-                <a href="https://github.com/bekaku/vue3-vite-typescript" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Vitepress starter
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vitepress</span>
-                </div>
-                <a href="https://github.com/bekaku/vitepress-starter" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Vuejs, composition-api, Vuetify template
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">Vuetify</span>
-                </div>
-                <a href="https://github.com/bekaku/vuetify-starter-template" target="_blank" class="project-link">View Project</a>
-            </div>
-			<div class="project-card">
-                <div class="project-description">
-                    Vuejs send firebase cloud messaging
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                </div>
-                <a href="https://github.com/bekaku/vuejs-send-firebase-cloud-messaging" target="_blank" class="project-link">View Project</a>
-            </div>
-        </section>
-
-        <!-- Mobile Projects -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">📌</span>
-                Mobile Projects
-            </h2>
-            
-            <div class="project-card">
-                <div class="project-description">
-                    Vue JS 3 + TypeScript + Ionic 8 for cross-platform mobile development.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Ionic</span>
-                    <span class="tech-badge">Vite</span>
-                </div>
-                <a href="https://github.com/bekaku/vue-ionic-example-app" target="_blank" class="project-link">View Project</a>
-            </div>
-			  <div class="project-card">
-                <div class="project-description">
-                    Nuxt + Ionic for cross-platform mobile development.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Nuxt.js</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Ionic</span>
-                </div>
-                <a href="https://github.com/bekaku/nuxt-ionic" target="_blank" class="project-link">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-description">
-                    Android Forum Example - Native Android application with modern architecture.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-badge">Android</span>
-                    <span class="tech-badge">Java</span>
-                </div>
-                <a href="https://github.com/bekaku/example-forum-android" target="_blank" class="project-link">View Project</a>
-            </div>
-        </section>
-
-        <!-- Current Focus -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">🌱</span>
-                What I'm Into Now
-            </h2>
-            <div class="highlight-list">
-                <div class="highlight-item">
-                    Leading and mentoring dev teams with a focus on growth and agility
-                </div>
-                <div class="highlight-item">
-                    Architecting scalable, event-driven systems
-                </div>
-                <div class="highlight-item">
-                    Exploring the future of frontend and backend performance
-                </div>
-                <div class="highlight-item">
-                    Building hybrid mobile apps that feel native
-                </div>
-            </div>
-        </section>
-
-        <!-- Quote -->
-        <div class="quote">
-            "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." – Martin Fowler
+            </nav>
         </div>
+    </header>
 
-        <!-- Connect Section -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="section-icon">📫</span>
-                Let's Connect!
-            </h2>
-            <p class="about-text">
-                Feel free to check out my repositories, reach out for collaboration, or just say hi!
-            </p>
-            <div class="connect-links">
-                <a href="https://www.linkedin.com/in/bekaku/" class="connect-link">LinkedIn</a>
-                <a href="mailto:baekaku@gmail.com" class="connect-link">Email</a>
-            </div>
-            
-            <div class="stats-section">
-                <div class="github-stats">
-                    <img src="https://github-readme-stats.vercel.app/api?username=bekaku&show_icons=true&theme=prussian" alt="GitHub Stats" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://avatars.githubusercontent.com/u/33171470?v=4" alt="Chanavee Bekaku">
                 </div>
-                <div class="github-stats">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=bekaku&theme=prussian" alt="GitHub Streak" />
+                <div class="hero-text">
+                    <h1>Chanavee Bekaku</h1>
+                    <h2>Software Development Manager</h2>
+                    <p>Full Stack Developer with <span class="highlight">15+ years</span> of experience building scalable web, mobile, and cloud applications</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="https://www.linkedin.com/in/bekaku/" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="visitor-badge">
-                <img src="https://visitor-badge.laobi.icu/badge?page_id=bekaku.repoName" alt="Visitor Badge" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>From building backend microservices to crafting polished frontend experiences, I've worn many hats in the software world.</p>
+                    <p>I currently lead engineering teams, architect systems, and drive tech-forward innovation for organizations. — helping businesses grow through code.</p>
+                    <p>I believe in open-source, automation, and staying curious in a fast-moving world.</p>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            
+            <div class="skills-category">
+                <h3>Languages & Core Tech</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-sass"></i>
+                        <span>Sass</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-markdown"></i>
+                        <span>Markdown</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Gradle</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-key"></i>
+                        <span>JWT</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Frontend Frameworks</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Nuxt.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Vuetify</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-atom"></i>
+                        <span>Quasar</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Vite</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Mobile Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Capacitor</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile"></i>
+                        <span>Cordova</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Ionic</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-android"></i>
+                        <span>Android</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Databases & Caching</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-memory"></i>
+                        <span>Redis</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Messaging & Streaming</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>RabbitMQ</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-stream"></i>
+                        <span>Apache Kafka</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>DevOps & Infrastructure</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-ubuntu"></i>
+                        <span>Ubuntu</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-npm"></i>
+                        <span>NPM</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-npm"></i>
+                        <span>PNPM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Monitoring & Observability</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Grafana</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Prometheus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Backend Projects -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>Spring Boot Starter Template</h3>
+                        <p>A modern and modular starter template for building robust REST APIs using Spring Boot. Designed for quick bootstrapping of secure, production-ready Java backends.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">Gradle</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/java-spring-boot-starter" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>MySQL8 Master-Slave Replication</h3>
+                        <p>MySQL8 Master-Slave replication environment using Docker Compose.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/mysql-replecation-docker" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>Node.js Express MySQL Starter</h3>
+                        <p>Starter Node.js, Express, Sequelize, MySQL.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/nodejs-express-mysql" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>PHP WebSocket</h3>
+                        <p>PHP websocket with thruway and autobahn-js</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/php-thruway-web-socket-example" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>Simple PHP REST APIs</h3>
+                        <p>Simple PHP REST APIs</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/php-rest-api" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-content">
+                        <h3>Forum Example PHP REST APIs</h3>
+                        <p>Forum Example PHP REST APIs</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/example-forum-rest-api-php" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frontend Projects -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Vue JS 3 + Typescript + Quasar 2 Starter</h3>
+                        <p>Vue JS 3 + Typescript + Quasar 2 Starter template + Docker</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Quasar</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://bekaku.github.io/quasar-starter" target="_blank" class="btn btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Nuxt 3 + Typescript + Quasar 2</h3>
+                        <p>Nuxt 3 + Typescript + Quasar 2 + Docker</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Nuxt.js</span>
+                            <span class="tech-badge">Quasar</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/nuxt-quasar-example-app" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Vite + Vue js3 + TypeScript</h3>
+                        <p>Starter template for Vite + Vue js3 + TypeScript project</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/vue3-vite-typescript" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Vitepress Starter</h3>
+                        <p>Vitepress starter</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vitepress</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/vitepress-starter" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Vuetify Starter Template</h3>
+                        <p>Vuejs, composition-api, Vuetify template</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Vuetify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/vuetify-starter-template" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-content">
+                        <h3>Firebase Cloud Messaging</h3>
+                        <p>Vuejs send firebase cloud messaging</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/vuejs-send-firebase-cloud-messaging" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Projects -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-content">
+                        <h3>Vue JS 3 + Typescript + Ionic 8</h3>
+                        <p>Vue JS 3 + Typescript + Ionic 8</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Ionic</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/vue-ionic-example-app" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-content">
+                        <h3>Vue JS 3 + Nuxt + Ionic</h3>
+                        <p>Vue JS 3 + Nuxt + Ionic</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Nuxt.js</span>
+                            <span class="tech-badge">Ionic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/nuxt-ionic" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-content">
+                        <h3>Android Forum Example</h3>
+                        <p>Android Forum Example</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Android</span>
+                            <span class="tech-badge">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bekaku/example-forum-android" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">What I'm Into Now</h2>
+            <div class="interests-content">
+                <ul class="interests-list">
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <span>Leading and mentoring dev teams with a focus on growth and agility</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-sitemap"></i>
+                        <span>Architecting scalable, event-driven systems</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <span>Exploring the future of frontend and backend performance</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Building hybrid mobile apps that feel native</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <div class="contact-content">
+                <p>Feel free to check out my repositories, reach out for collaboration, or just say hi!</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/bekaku/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:baekaku@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/bekaku" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="quote">
+                    <blockquote>
+                        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+                        <cite>– Martin Fowler</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="github-stats">
+                <img src="https://github-readme-stats.vercel.app/api?username=bekaku&show_icons=true&theme=prussian" alt="Bekaku GitHub Stats">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=bekaku&theme=prussian" alt="Bekaku GitHub Streak">
+            </div>
+            <div class="visitor-counter">
+                <span>Visitor Count:</span>
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=bekaku.portfolio" alt="Visitor Counter">
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Chanavee Bekaku. All rights reserved.</p>
+            </div>
+            <div class="back-to-top">
+                <a href="#home">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="portfolio/js/main.js"></script>
 </body>
 </html>
+
