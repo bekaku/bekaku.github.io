@@ -1,0 +1,1 @@
+import{_ as a,m as r,n,w as e,x as t,bs as s,bt as c}from"./index-CPWGwitb.js";import{_}from"./_plugin-vue_export-helper-DlAUqK2U.js";const f={};function i(l,u){const o=a("router-view");return n(),r(c,{view:"hHh LpR fFf"},{default:e(()=>[t(s,null,{default:e(()=>[t(o)]),_:1})]),_:1})}const d=_(f,[["render",i]]);export{d as default};

@@ -1,1 +1,0 @@
-import{c as i,a5 as o,a6 as e,a7 as u,a8 as l,a9 as v,aa as c}from"./index--rRessbS.js";function d(t){{const a={active:!0};if(typeof t=="function"){const n=i(t);a.val=n.value,o(n,s=>{a.val=s,a.active===!0&&e()})}else a.val=t;c.push(a),e(),u(()=>{a.active=!0,e()}),l(()=>{a.active=!1,e()}),v(()=>{c.splice(c.indexOf(a),1),e()})}}export{d as u};
