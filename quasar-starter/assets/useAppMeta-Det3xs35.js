@@ -1,0 +1,1 @@
+import{u as r,ah as i,r as l}from"./index-D2_s7zbP.js";import{u as o}from"./use-meta-DhCLVLMg.js";const c=e=>{const{t}=r(),a=i(),s=l(a.meta.pageName?t(`${a.meta.pageName}`)+`${e&&e.additionalTitle?" - "+e.additionalTitle:""}`:t("app.name"));return o(()=>({title:s.value})),{setTitle:u=>{s.value=u}}};export{c as u};
