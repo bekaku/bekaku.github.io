@@ -1,0 +1,1 @@
+import{u as r,am as i,r as l}from"./index-BNidFx1q.js";import{u as m}from"./use-meta-Danrm9KZ.js";const c=e=>{const{t}=r(),a=i(),s=l(a.meta.pageName?t(`${a.meta.pageName}`)+`${e&&e.additionalTitle?" - "+e.additionalTitle:""}`:t("app.name"));return m(()=>({title:s.value})),{setTitle:u=>{s.value=u}}};export{c as u};
