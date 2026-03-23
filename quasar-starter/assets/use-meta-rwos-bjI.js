@@ -1,1 +1,0 @@
-import{aa as i,ab as e,ac as o,ad as u,ae as l,h as v,af as c}from"./index-dGnnr7Y2.js";function d(t){{const a={active:!0};if(typeof t=="function"){const n=v(t);a.val=n.value,i(n,s=>{a.val=s,a.active===!0&&e()})}else a.val=t;c.push(a),e(),o(()=>{a.active=!0,e()}),u(()=>{a.active=!1,e()}),l(()=>{c.splice(c.indexOf(a),1),e()})}}export{d as u};
